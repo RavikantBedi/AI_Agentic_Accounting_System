@@ -1,0 +1,37 @@
+# ---- Core API ----
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-multipart==0.0.20
+email-validator==2.2.0
+
+# ---- Persistence ----
+SQLAlchemy==2.0.36
+alembic==1.14.0
+
+# ---- Auth (pure-python, no native build deps) ----
+PyJWT==2.10.1
+
+# ---- Data / import-export ----
+pandas==2.2.3
+openpyxl==3.1.5
+python-dateutil==2.9.0.post0
+
+# ---- Matching ----
+rapidfuzz==3.11.0
+
+# ---- HTTP (AI providers) ----
+httpx==0.28.1
+
+# ---- Reporting / export ----
+reportlab==4.2.5
+
+# ---- Optional document AI (graceful degradation if absent) ----
+pymupdf==1.25.1
+pdfplumber==0.11.4
+pillow==11.0.0
+pytesseract==0.3.13
+
+# ---- Postgres driver (production; unused on SQLite) ----
+psycopg[binary]==3.2.3 ; sys_platform != "darwin"

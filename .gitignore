@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets and local data — never commit these.
+# Ignore every .env variant (.env.local, .env.bak, .env.broken ...) and then
+# re-admit the template, which is the only one that may be committed and must
+# never contain a real value.
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Test artefacts
+frontend/e2e/*.png
+frontend/test-results/
+playwright-report/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
